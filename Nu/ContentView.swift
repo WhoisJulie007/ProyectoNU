@@ -43,6 +43,8 @@ struct ContentView: View {
             .background(Color.moradoNU)
             .ignoresSafeArea(.all)
             Spacer()
+            Text("Hola soy sandra ajajajjaaj")
+            Image(systemName: "square.and.arrow.up")
             
         }
     }
