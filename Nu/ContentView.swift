@@ -133,12 +133,50 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
         
-
+            Rectangle()
+                .frame(height: 1)
+                .foregroundColor(.white.opacity(0.2))
         
 
         }.padding(.horizontal, 12)
         .padding(.top, 20)
-
+            
+            VStack(alignment: .leading){
+                
+                
+                //Mis tarjetas
+                HStack(){
+                    Image(systemName: "wallet.bifold")
+                        .padding(.leading)
+                    Text("Mis tarjetas")
+                        .bold(true)
+                    Spacer()
+                }
+                .padding(10.0)
+                .frame(width: 350, height: 80)
+                .font(.system(size: 20))
+                .foregroundColor(Color.white)
+                .background(Color.secondary)
+                .cornerRadius(15)
+                .padding(20.0)
+                
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .foregroundColor(.white.opacity(0.2))
+                
+                HStack{
+                    Text("Préstamo personal")
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                }
+                .font(.system(size: 25))
+                Text("Simula y descrubre en segundo la oferta que tenemos para ti")
+                    .foregroundColor(Color.gray)
+                
+                
+                
+            }.padding(.horizontal, 12)
 
 
 
