@@ -29,7 +29,7 @@ struct ContentView: View {
                         ZStack{
                             Color.moradoNU
                         }
-                        .frame(height: 160)
+                        .frame(height: 190)
                         .overlay(
                             VStack{
                                 HStack{
@@ -199,6 +199,9 @@ struct ContentView: View {
                                 
                                 promos(imagen: "promo3", titulo: "Conoce los beneficios de Nu", contenido: "Descubre los descuentos y colaboracion con diversas marcas", boton:"Descubrir")
                             }
+                            Rectangle()
+                                .frame(height: 20)
+                                .foregroundColor(.black)
                         }
                         
 
@@ -209,6 +212,7 @@ struct ContentView: View {
                     
                     
                 }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+
                     
             }
             
